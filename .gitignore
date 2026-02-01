@@ -128,5 +128,6 @@ redis-data/
 # SQL Server
 sqlserver-data/
 
-# RabbitMQ
-rabbitmq-data/
+# Keycloak
+keycloak-data/
+postgres-keycloak-data/
