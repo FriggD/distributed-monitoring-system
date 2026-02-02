@@ -1,0 +1,14 @@
+namespace MonitorService.Application.Interfaces;
+
+public interface IMessagePublisher
+{
+    Task PublishAsync<T>(string routingKey, T message);
+}
+
+public interface ICacheService
+{
+    Task<T?> GetAsync<T>(string key);
+    Task SetAsync<T>(string key, T value, TimeSpan? expiration = null);
+    Task RemoveAsync(string key);
+    Task<bool> ExistsAsync(string key);
+}
