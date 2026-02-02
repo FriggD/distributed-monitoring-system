@@ -131,3 +131,4 @@ sqlserver-data/
 # Keycloak
 keycloak-data/
 postgres-keycloak-data/
+docs/*
